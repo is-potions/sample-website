@@ -41,6 +41,28 @@
 	border-radius: 50px;
 }
 
+.food-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.food-list img {
+	width: 100px;
+	border-radius: 50px;
+}
+
+.food-indiv {
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.food-indiv img {
+	width: 100px;
+	border-radius: 50px;
+}
+
 .nav-list li {
 	list-style: none;
 	padding: 26px 30px;

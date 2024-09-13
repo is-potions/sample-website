@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav class="navbar background">
 				<ul class="nav-list">
 					<div class="logo">
-						<img src= "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"/>
+						<img src= "https://dummyimage.com/rec"/>
 					</div>
 					<li>
 						<a href="#menu">Menu</a>

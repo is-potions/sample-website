@@ -5,7 +5,7 @@ export default function AboutUs() {
         <div id="menu">
                 <section class="section">
                     <div className="box-main">
-                        <div class="firstHalf">
+                        <div className="firstHalf">
                             <h1 class="text-big">
                                 About Us:
                             </h1>
@@ -16,14 +16,14 @@ export default function AboutUs() {
                     </div>
                 </section>
                 <section class="section">
-                    <div class="box-main">
-                        <div class="secondHalf">
+                    <div className="box-main">
+                        <div className="secondHalf">
                             <h1 class="text-big">
                                 Bestsellers:
                             </h1>
                             <p class="text-small">
-                                <div class="food-list">
-                                    <div class="food-indiv">
+                                <div className="food-list">
+                                    <div className="food-indiv">
                                         <img src= "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"/><br></br>
                                         Carbonara
                                     </div>
@@ -33,8 +33,8 @@ export default function AboutUs() {
                     </div>
                 </section>
                 <section class="section">
-                    <div class="box-main">
-                        <div class="secondHalf">
+                    <div className="box-main">
+                        <div className="secondHalf">
                             <h1 class="text-big">
                                 Where Can You Contact Us?
                             </h1>

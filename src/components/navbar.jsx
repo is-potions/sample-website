@@ -1,4 +1,5 @@
 import React from "react";
+import { Soup } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -23,9 +24,12 @@ export default function Navbar() {
 		<>
 			<nav className="navbar background">
 				<ul className="nav-list">
-					<div className="logo">
-						{/* <img src={result.urls.small}/> */}
-					</div>
+					<li>
+						<div className="logo">
+							{/* <img src={result.urls.small}/> */}
+							<Soup />
+						</div>
+					</li>
 					<li>
 						<a href="#menu">Menu</a>
 					</li>
@@ -40,7 +44,7 @@ export default function Navbar() {
 					</li>
 				</ul>
 
-				<div className="rightNav">
+				{/* <div className="rightNav">
 					<input
 						type="text"
 						name="search"
@@ -49,7 +53,7 @@ export default function Navbar() {
 					<button className="btn btn-sm">
 						Search
 					</button>
-				</div>
+				</div> */}
 			</nav>
 		</>
     );

@@ -5,6 +5,14 @@
 	padding: 0;
 }
 
+p {
+	font-family: DIN Next Slab, sans-serif;
+}
+
+h1 {
+	font-family: Monotype Grotesque;
+}
+
 .navbar {
 	display: flex;
 	align-items: center;
@@ -12,6 +20,7 @@
 	position: sticky;
 	top: 0;
 	cursor: pointer;
+	z-index: 3;
 }
 
 .background {
@@ -169,86 +178,145 @@
 	color: #fff;
 }
 
-/* TODO: add css to the div with id=test */
-#left-panel {
-	/* display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center; */
-	float:left; 
-	/* width:100px; */
-}
-
-#right-panel {
-	/* display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center; */
-	float:left; 
-	/* width: 100px; */
-}
-
-#contents {
-	/* display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center; */
-	float:left; 
-	/* width:400px; */
-}
-
-.test {
+/* heroElement.jsx CSS */
+.hero_wrapper {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5%;
+	justify-content: center;
 }
 
-.wrapper {
-	width: 50vw;
-	padding-left: 25%;
-	padding-right: 25%;
+.hero_container {
+	width: 100%;
+	height: 50vmin;
+	overflow: hidden;
+	position: relative;
 }
 
+.hero_image {
+	/* width: 100%; */
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 0;
+}
+
+.hero_title {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.hero_title p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	font-size: 10vw;
+}
+
+/* productsList.jsx CSS */
 .products_wrapper {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .products_container {
-	width: 60vw;
 	display: grid;
+	justify-content: space-evenly;
 	grid-template-columns: repeat(3, 1fr);
+	max-width: 1200px;
+	gap: 1rem;
+}
+
+.food_container {
+	width: fit-content;
+	/* border: rgb(0, 0, 250) 5px solid; */
 }
 
 .food_image {
+	display: flex;
+	align-items: center;
+	border: #000 3px solid;
+	
+	border-radius: 10px;
 	width: 15vw;
-	height: 15vw;
+	height: 15vmax;
 }
 
 .food_image img {
-    width: 100%;
-    height: 100%;
-	border-radius: 15px;
-	border-bottom: 5px dashed rgb(0, 0, 0);
+	margin:auto;
+	width: 100%;
+	/* height: 15vw; */
+
 }
 
-.food_image_desc h1 {
+.food_desc{
 	padding-top: 10px;
 	font-style: italic;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	max-width: 15vw;
+	/* font-family: Vivaldi; */
+	/* container-name: food_desc; */
 }
 
-.food_image_desc h2 {
-	font-style: bolder;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.food_list_wrapper {
-	width: 15vw;
-	height: 30vw;
-	display: block;
+/* filter_list */
+.filter_container {
+	display: flex;
+	width: 100%;
 	justify-content: center;
+}
+
+.filter_wrapper {
+	display: flex;
+	width: 1200px;
+}
+
+.filter_list {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* buttons */
+.filter {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+  margin: 1vmin;
+  min-height: 30px;
+  min-width: fit-content;
+  outline: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.filter:disabled {
+  pointer-events: none;
+}
+
+.filter:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.filter:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
